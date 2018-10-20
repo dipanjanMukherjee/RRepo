@@ -1,2 +1,2 @@
-# hello-world
-this is just created for a testing purpose
+# Time series clustering using R
+some code i wrote following a time series clustering paper 
