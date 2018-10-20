@@ -1,5 +1,6 @@
 # 1. Time series clustering using R
-some code i wrote replicating a paper on time series clustering 
+some code written replicating a paper on time series clustering 
+https://cran.r-project.org/web/packages/dtwclust/vignettes/dtwclust.pdf
 
 # 2. LDA using R
 code written to create topic models using LDA
