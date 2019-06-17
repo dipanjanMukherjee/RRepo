@@ -14,6 +14,8 @@ do both stationery and non stationery forecasting
 
 # 5. POS tagging
 find key words
+pos.R
 
 # 6. text rank algorithm
+textrank.R
 
