@@ -6,6 +6,19 @@ require(dplyr)
 require(tidyr)
 require(stringr)
 
+# simple apriori
+txn <- read.transactions(file = "data_final.csv",rm.duplicates = FALSE, format = "basket", sep = ",", cols = 1)
+basket <- arules::apriori(txn, parameter = list(sup = 0.01, conf = 0.5, target = "rules"))
+
+inspect(basket)
+
+df <- as(basket, "data.frame")
+write.csv(df, "rules.csv")
+
+#visualize
+View(df)
+plot(basket, method = "graph")
+plot(basket, method = "matrix", measure = "confidence")
 
 # rule generation
 
